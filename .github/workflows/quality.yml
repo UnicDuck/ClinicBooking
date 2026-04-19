@@ -8,7 +8,7 @@ jobs:
   quality:
     runs-on: ubuntu-latest
     env:
-      DJANGO_SECRET_KEY: dummy-ci-secret-key
+      SECRET_KEY: dummy-ci-secret-key
 
     steps:
       - name: Checkout repository
