@@ -6,9 +6,7 @@ from .models import User
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
-    fieldsets = tuple(UserAdmin.fieldsets or ()) + (
-        ("Role", {"fields": ("role",)}),
-    )
+    fieldsets = tuple(UserAdmin.fieldsets or ()) + (("Role", {"fields": ("role",)}),)
     add_fieldsets = (
         (
             None,
